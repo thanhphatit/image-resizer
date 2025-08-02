@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-  <title>{{ page.title }}</title>
-  <meta charset="UTF-8">
-  
-  <script src="../javascript/jquery-1.12.0.min.js"></script>
-  {% if page.included_js %}
-  {% for js in page.included_js %}
-  <script src="{{ js }} " defer></script>
-  {% endfor %}
-  {% endif %}
+    <title>{{ page.title }}</title>
+    <meta charset="UTF-8">
 
-  <link rel="stylesheet" href="../css/main.css">
+    <script src="./javascript/jquery-1.12.0.min.js"></script>
+    {% if page.included_js %}
+    {% for js in page.included_js %}
+    <script src="{{ js }} " defer></script>
+    {% endfor %}
+    {% endif %}
 
-  {% if page.included_css %}
-  {% for css in page.included_css %}
-  <link rel="stylesheet" href="{{ css }}">
-  {% endfor %}
-  {% endif %}
-  
+    <link rel="stylesheet" href="./css/main.css">
+
+    {% if page.included_css %}
+    {% for css in page.included_css %}
+    <link rel="stylesheet" href="{{ css }}">
+    {% endfor %}
+    {% endif %}
+
 
 </head>
+
 <body>
 
-  {% include menu.html %}
+    {% include menu.html %}
 
-  {{ content }}
+    {{ content }}
 
 
 </body>
