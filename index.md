@@ -1,6 +1,6 @@
 ---
 layout: tool_base
-title: "Image cropping and resizing"
+title: "Image cropping and resizing."
 included_js:
 - {{ "/js/croppie.min.js" | relative_url }}
 - {{ "/js/sweetalert.min.js" | relative_url }}
