@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
 
-    <!-- JS -->
+    <!-- Use root favicon -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- Core JS -->
     <script src="{{ '/javascript/jquery-1.12.0.min.js' | relative_url }}"></script>
     {% if page.included_js %}
         {% for js in page.included_js %}
@@ -13,7 +16,7 @@
         {% endfor %}
     {% endif %}
 
-    <!-- CSS -->
+    <!-- Core CSS -->
     <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
     {% if page.included_css %}
         {% for css in page.included_css %}
@@ -26,4 +29,5 @@
     {% include menu.html %}
     {{ content }}
 </body>
+
 </html>
