@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <title>{{ page.title }}</title>
     <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
 
-    <script src="../javascript/jquery-1.12.0.min.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+
+    <!-- Core JS -->
+    <script src="{{ '/javascript/jquery-1.12.0.min.js' | relative_url }}"></script>
+
     {% if page.included_js %}
     {% for js in page.included_js %}
-    <script src="{{ js }} " defer></script>
+    <script src="{{ js }}" defer></script>
     {% endfor %}
     {% endif %}
 
-    <link rel="stylesheet" href="../css/main.css">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
 
     {% if page.included_css %}
     {% for css in page.included_css %}
     <link rel="stylesheet" href="{{ css }}">
     {% endfor %}
     {% endif %}
-
-
 </head>
 
 <body>
-
     {% include menu.html %}
-
     {{ content }}
-
-
 </body>
-
 </html>
