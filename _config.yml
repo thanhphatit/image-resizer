@@ -17,8 +17,8 @@ title: Web tools for UC Santa Cruz
 email: urwebteam@ucsc.edu
 description: > # this means to ignore newlines until "baseurl:"
   Use these web tools to create and resize images, generate links and buttons, and create HTML code that you can paste into your web site.
-baseurl: "/web-tools" # the subpath of your site, e.g. /blog
-url: "http://ucsc.github.io" # the base hostname & protocol for your site
+baseurl: "/image-resizer" # the subpath of your site, e.g. /blog
+url: "https://tools.itblognote.com" # the base hostname & protocol for your site
 github_username: ucsc
 
 # Build settings
